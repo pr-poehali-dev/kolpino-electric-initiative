@@ -1,14 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import ElectricServiceLinks from "@/components/ElectricServiceLinks";
+import LocationMap from "@/components/LocationMap";
+import VideoGallery from "@/components/VideoGallery";
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-center mb-8 text-blue-800">
+        Услуги электрика в Колпино
+      </h1>
+      
+      <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <ElectricServiceLinks />
+        <LocationMap />
+        <VideoGallery />
       </div>
     </div>
   );
-};
-
-export default Index;
+}
