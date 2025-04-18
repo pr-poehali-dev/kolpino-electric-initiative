@@ -1,7 +1,6 @@
 
 import ElectricServiceLinks from "@/components/ElectricServiceLinks";
 import LocationMap from "@/components/LocationMap";
-import VideoGallery from "@/components/VideoGallery";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
         <ElectricServiceLinks />
         <LocationMap />
-        <VideoGallery />
       </div>
     </div>
   );
